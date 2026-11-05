@@ -13,4 +13,4 @@ kubectl port-forward pod/todoapp-pod 8081:8000 -n todoapp
 #to test busybox run
 kubectl -n todoapp exec -it busyboxplus -- sh
 #and run then:
- curl
+ curl http://todoapp:8000/api/live/
